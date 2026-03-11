@@ -1,0 +1,25 @@
+[project]
+name = "notebooks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "manim>=0.20.1",
+    "mlx>=0.31.0",
+    "torch>=2.10.0",
+    "torchinfo>=1.8.0",
+    "transformers>=5.2.0",
+]
+
+[tool.pyright]
+typeCheckingMode = "off"
+
+[tool.pylint.master]
+disable = "all"
+
+[[tool.uv.index]]
+name = "paypal-artifactory"
+url = "https://artifactory.paypalcorp.com/artifactory/api/pypi/paypal-python-all/simple"
+default = true
